@@ -90,7 +90,6 @@
 		// Check if swipe was left or right?
 		if(Math.abs(xDiff) > Math.abs(yDiff)) {
 			if(xDiff>0) {
-				var velocity
 				emitEvent(SWIPE_LEFT, swipeEvent);
 			} else {
 				emitEvent(SWIPE_RIGHT, swipeEvent);
@@ -137,8 +136,7 @@
 	}
 
 	// Exports
-	window.SwipeManager = {
-		
+	window.SwipeManager = {	
 		addEventListener : addEventListener,
 		removeEventListener : removeEventListener,
 		emitEvent : emitEvent,
