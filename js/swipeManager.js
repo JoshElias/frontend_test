@@ -107,6 +107,10 @@
 	}
 
 	function registerForSwipeEvents(element) {
+		if(!Utility.isElement(element)) {
+			return;
+		}
+
 		element.addEventListener("touchstart", touchStartHandler, false);
 		element.addEventListener("touchup", touchUpHandler, false);
 		element.addEventListener("mousedown" , mouseDownHandler, false);
@@ -115,6 +119,10 @@
 	}
 
 	function unregisterForSwipeEvents(element) {
+		if(!Utility.isElement(element)) {
+			return;
+		}
+		
 		var index;
 		if((index = inputEventListeners.indexOf(element)) !== -1) {
 			inputEventListeners.splice(index, 1);
