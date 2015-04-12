@@ -4,19 +4,22 @@ div#rotator {
 	border: 1px solid black;
 	background: #aaa;
 	text-align: center;
-	-webkit-animation-name: spin; 
-	-webkit-animation-duration: 5s;
-	-webkit-animation-iteration-count: 1;
-	-webkit-animation-timing-function: ease;
-}
-
-@-webkit-keyframes spin {
-	0% { -webkit-transform: rotateY(0deg); }
-	100% { -webkit-transform: rotateY(720deg); }
+	margin-left: auto;
+    margin-right: auto;
 }
 
 div#rotatorElement {
-	width: 100%;
-	height: 100%;
 	position: absolute;
+}
+
+div#rotatorElement h4 {
+	position: absolute;
+	top: 180px;
+	text-align: center;
+}
+
+div#rotatorElement p {
+	position: absolute;
+	top: 200px;
+	text-align: center;
 }
